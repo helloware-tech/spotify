@@ -1,0 +1,22 @@
+.image-card-container {
+  position: relative;
+  align-self: center;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+.image-card {
+  width: 95%;
+  padding: 8px;
+
+}
+
+
+.image-card-button {
+  border: solid green 2px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}

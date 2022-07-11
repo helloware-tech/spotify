@@ -1,0 +1,17 @@
+.home{
+  background-color: #121212;
+  min-height: 100vh;
+  width: 85vw;
+  padding: 24px;
+
+}
+.footer-space-1{
+  height: 50px;
+}
+.footer-space-2{
+  height: 50px;
+}
+.footer-space-line{
+border-top: solid 2px #2d2d2d;
+height: 100px;
+}

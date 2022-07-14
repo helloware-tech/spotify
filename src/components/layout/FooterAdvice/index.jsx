@@ -4,7 +4,6 @@ import './style.css';
 
 const FooterAdvice = () => {
 
-
 	return (
 		<footer>
 			<div className='footer-right'>

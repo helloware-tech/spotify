@@ -5,7 +5,7 @@ const SongItemCard = ({ title, subTitle, seeAll }) => {
 /* 		//!	 se puede automatizar con un array de cards con los datos  */
 		<>
 			<div className='d-flex flex-column'>
-				<div className=''>
+				<div className='row'>
 					<div>
 						<div className='display-5'>{title}</div>
 					</div>

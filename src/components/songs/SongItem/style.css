@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
 }
+
 .image-card {
   width: 95%;
   padding: 8px;
@@ -19,4 +20,8 @@
   position: absolute;
   bottom: 40px;
   right: 40px;
+  visibility: hidden;
+}
+.image-card-button:hover{
+  visibility: unset;
 }

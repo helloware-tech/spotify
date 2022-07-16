@@ -1,9 +1,11 @@
-.layout {
+section {
+	height: 100vh;
 	overflow-x: hidden;
 	color: #fff;
 
 }
 
-.layout__body {
-	display: flex;
+.layout {
+	width: 85%;
+	float: right;
 }

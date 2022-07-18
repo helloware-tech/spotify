@@ -21,6 +21,24 @@ const reducer = (state, action) => {
 				...state,
 				token: action.token,
 			};
+
+			case 'SET_PLAYLISTS':
+				return {
+					...state,
+					playLists: action.playLists,
+				};
+				case 'SET_CATEGORY':
+					return {
+						...state,
+						category: action.category,
+					};
+					case 'SET_DISCOVER_WEEKLY':
+						return {
+							...state,
+							discoverWeekly: action.discoverWeekly,
+						};
+
+
 		default:
 			return state;
 	}

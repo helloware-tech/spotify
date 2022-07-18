@@ -1,25 +1,4 @@
-.home{
+.player__body{
   display: flex;
-  flex-direction: column;
-}
-.home__header{
-  position: relative;
-  flex:0.2;
-}
-
-.home__body {
-  flex: 0.8;
-  background-color: #121212;
-  padding: 24px;
-  flex: 0.8;
-}
-.footer-space-1{
-  height: 50px;
-}
-.footer-space-2{
-  height: 50px;
-}
-.footer-space-line{
-border-top: solid 2px #2d2d2d;
-height: 100px;
+  
 }

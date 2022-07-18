@@ -7,7 +7,7 @@ import Layout from '../components/layout/layout/Layout';
 import Home from '../views/Home';
 
 import Login from '../views/Login';
- import Player from '../components/layout/Player'
+import Player from '../components/layout/Player';
 import { useEffect } from 'react';
 import { getTokenfromUrl } from '../utility/spotify';
 import SpotifyWebApi from 'spotify-web-api-js';
@@ -41,23 +41,37 @@ function App() {
 					user,
 				});
 			});
+
+			spotify.getUserPlaylists().then((playLists) => {
+				dispatch({
+					type: 'SET_PLAYLISTS',
+					playLists,
+				});
+			});
+
+			spotify.getPlaylist().then(response=>{
+				dispatch({
+					type: 'SET_DISCOVER_WEEKLY',
+					discoverWeekly:  response
+				});
+			})
+
 		}
 	}, []);
 
-	console.log('user >>> ', token);
+	console.log('token >>> ', token);
 	console.log('user >>> ', user);
 
 	return (
 		<I18nextProvider i18n={i18n}>
 			<BrowserRouter>
 				<Routes>
-				<Route exact path='/' element={<LayoutContainer component={  <Home />  } />} />
-					<Route exact path='/player' element={<LayoutContainer component={  <Player spotify={spotify} />  } />} />
+					<Route exact path='/' element={<LayoutContainer component={<Home />} />} />
+					<Route exact path='/player' element={<Player spotify={spotify} />} />
 					<Route exact path='/login' element={<Login />} />
 				</Routes>
 			</BrowserRouter>
 		</I18nextProvider>
-		/* 		<div>{token ? <Player spotify={spotify} /> : <Login></Login>}</div> */
 	);
 }
 

@@ -1,0 +1,30 @@
+.menuOption {
+  display: flex;
+  align-items: center;
+	color: gray;
+  height: 40px;
+  cursor: pointer;
+  transition: 200ms color  ease-in;
+}
+.menuOption:hover{
+  color: #fff;
+
+}
+.menu > hr{
+  border: 1px  solid #282828;
+  width: 90%;
+  margin: 10px auto;
+}
+h4{
+  margin-bottom: 0;
+}
+.menu_title{
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 12px; 
+}
+.menuOption > p {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 14px;
+}

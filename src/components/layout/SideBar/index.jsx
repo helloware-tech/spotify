@@ -1,9 +1,10 @@
 import SideBarOption from '../../common/SideBarOption';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import PlaylistPlayRoundedIcon from '@mui/icons-material/PlaylistPlayRounded';
 import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
-import PlaylistPlayRoundedIcon from '@mui/icons-material/PlaylistPlayRounded';
+
 import './style.css';
 const SideBar = () => {
 	return (

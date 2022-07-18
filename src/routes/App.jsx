@@ -49,7 +49,7 @@ function App() {
 				});
 			});
 
-			spotify.getPlaylist().then(response=>{
+			spotify.getPlaylist('6ehdSiG3d2TinBXr1r7ZK0').then(response=>{
 				dispatch({
 					type: 'SET_DISCOVER_WEEKLY',
 					discoverWeekly:  response

@@ -1,0 +1,34 @@
+/* Colors */
+:root {
+  --color-primary: #1cd760;
+  --color-dark: #231515;
+  --color-medium: #a9a9a9;
+  --color-danger: #ec255a;
+
+  --color-light: #f2f2f2;
+  --color-primary-light: #faf6fa;
+  --color-danger-light: #ec255a1a;
+
+  --color-white: white;
+  --color-black: black;
+}
+
+/* Font sizes*/
+:root {
+  --font-size-large: 32px;
+  --font-size-medium: 24px;
+  --font-size-small: 14px;
+  --font-size-extra-small: 10px;
+}
+
+/* Radius */
+:root {
+  --radius-large: 20px;
+  --radius-medium: 10px;
+  --radius-small: 5px;
+}
+
+/* Layout */
+:root {
+  --menu-width: 380px;
+}
